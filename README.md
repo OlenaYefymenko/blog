@@ -13,6 +13,9 @@ Feel free to raise issues if you find any, or open pull requests if you'd like t
 
 ## **Connect**
 
-Stay updated by following the blog or connecting with me on **LinkedIn** or **my personal website**.
+Stay updated by following the blog or connecting with me on [LinkedIn] or [my personal website][website].
+
+[LinkedIn]: https://www.linkedin.com/in/o-yefymenko
+[website]: https://olenayefymenko.github.io/blog
 
 Happy Coding! 🚀
