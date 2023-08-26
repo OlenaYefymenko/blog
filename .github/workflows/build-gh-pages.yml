@@ -2,8 +2,10 @@
 
 name: Build website and publish to GH pages
 
-on:  # yamllint disable-line rule:truthy
+on:
   push:
+    branches:
+    - main
   pull_request:
 
 jobs:
@@ -48,10 +50,7 @@ jobs:
       url: https://olenayefymenko.github.io/blog
 
     permissions:
-      pages: write  # This allows to publish a GitHub Pages site
-      # `id-token` allows GitHub Pages to verify the deployment originates
-      # from an appropriate source through OpenID Connect, according to the
-      # README of the `actions/deploy-pages` action.
+      pages: write
       id-token: write
 
     steps:
@@ -73,6 +72,3 @@ jobs:
     - name: Ping Google about the updated RSS feed
       run: >-
         curl https://google.com/ping?sitemap=https://olenayefymenko.github.io/blog/feed.xml
-
-...
-
