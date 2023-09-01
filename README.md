@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-This blog aims to:
+The blog aims to:
 
 - 👁️ Analyze basic software design patterns.
 - 🐍 Share insights and best practices in Python development.
