@@ -1,7 +1,23 @@
-title: About this Website
+_model: page
 ---
 body:
 
-This is a website that was made with the Lektor quickstart.
+### Hi there 👋
 
-And it does not contain a lot of information.
+My name is Olena Yefymenko. I’m an aspiring Python developer. My first IT experience was obtained in the cloud area during my internship. I learned and implemented many new technologies and tools, including serverless AWS services and IoT core devices. It was not easy, but interesting.
+
+However, learning was always an integral part of my life. I've spent a significant part of my career in data analysis and research. Also, I had familiarity with scientific activity during my studding at university. So, my job expertise contributed the habit to study constantly and search insights.
+
+Like most of us, I store notes in my computer or in the Cloud. However, considering that *learning to public* provides a deeper understanding of the issues we study, I have come up with the idea that sharing my learning process is a good approach to improving knowledge. It's also important that I have the chance to help someone.
+
+Reflecting on various learning areas, I've outlined some objectives for my blog:
+
+👁️ Analyze basic software design patterns.
+🐍 Share insights and best practices in Python development.
+🌐 Dive deep into Django framework, publish some step of my own project.
+🛠 Highlight related tools, libraries, and frameworks that supercharge Python and Django development.     
+🌥️Consider topics of cloud technologies (perhaps, I will prepare for the next AWS certification exam).
+
+*To find out what I'm currently working on, you can take a look at [my GitHub profile](https://github.com/OlenaYefymenko).*
+
+Obviously, I am not expert in these spheres, but I strive to self-improvement and have motivation to work a lot. We'll see what happens😉.
