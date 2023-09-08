@@ -1,28 +1,41 @@
+:root {
+    --custom-white: #fcfcfc;
+    --custom-black: #010101;
+    --custom-shadow-overlay: 0 1px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
 body {
-    font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    background-color: #3183A3;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: all .4s ease-in-out;
+    overflow-x: hidden;
 }
 
 a {
-    color: #2a99b6;
+    color: white;
 }
 
 a:hover {
-    color: #33bbdf;
+    color: #e2edf1;
 }
 
-header, footer, div.page {
-    width: 760px;
+header,
+footer,
+div.page {
+    width: 800px;
     margin: 0 auto;
-    background: #daeef3;
-    padding: 20px 30px;
+    background: #2a6f8d;
+    padding: 20px 40px;
 }
 
 header h1 {
-    color: #169bbd;
     margin: 0;
-    font-weight: normal;
-    font-size: 42px;
+    font-weight: 400;
+    font-size: 44px;
 }
 
 header nav ul {
@@ -33,10 +46,19 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 8px 0 0;
+    margin: 0 10px 0 0;
     padding: 0;
 }
 
 div.page {
-    background: #f1fbfe;
+    background: #2a6f8d;
+}
+
+html {
+    font-size: 63%;
+}
+
+::selection {
+    background-color: #2a6f8d;
+    color: white;
 }
