@@ -1,22 +1,50 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — OlenaYefymenko/blog</title>
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="supported-color-schemes" content="light dark">
+
+  <meta name="author" content="Olena Yefymenko">
+  <meta name="description" content="{{ config.PROJECT.name }} — personal blog of Olena Yefymenko">
+  <meta name="robots" content="all">
+
+  <meta name="p:domain_verify" content="8ac6cdaefda8d0a20ed08fb5c9fd3352">
+
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+
+  <link rel="prefetch">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ config.PROJECT.name }}" href="/feed.xml">
+  <link rel="stylesheet" href="{{ get_pygments_stylesheet() | url }}">
+  <link rel="stylesheet" href="{{ '/static/style.css' | url }}">
+
+  <!-- Adding Nunito Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>{% block title %}Welcome{% endblock %} — {{ config.PROJECT.name }}</title>
+
+  {% if this.datamodel.filename is not none -%}
+  {# NOTE: Lektor-Open-Graph tracebacks if filename is None #}
+  {{- open_graph.render_tags(this) | indent(width=2) }}
+  {% endif -%}
+</head>
+
 <body>
   <header>
-    <h1>OlenaYefymenko/blog</h1>
+    <h1><a href="{{ '/' | url }}">{{ config.PROJECT.name }}</a></h1>
     <nav>
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
+        <li{% if this._path[:5] in ('/', '/blog' ) %} class="active" {% endif %}><a href="{{ '/' | url }}">TIL</a></li>
+          {% for href, title in [
           ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
+          ['/about', "About Me"]
+          ] %}
+          <li{% if this.is_child_of(href) %} class="active" {% endif %}><a href="{{ href | url }}">{{ title }}</a></li>
+            {% endfor %}
       </ul>
     </nav>
   </header>
@@ -24,6 +52,6 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2023 by Olena.
+    © 2023 by Olena Yefymenko
   </footer>
 </body>

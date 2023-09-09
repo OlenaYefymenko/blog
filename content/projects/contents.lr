@@ -1,9 +1,7 @@
+_model: page
+---
 title: Projects
 ---
 body:
 
-This is a list of the projects:
-
-* Project 1
-* Project 2
-* Project 3
+[Django Girls Blog](https://github.com/kpi-web-guild/django-girls-blog-OlenaEfymenko)
