@@ -18,6 +18,8 @@ click==8.1.7
     #   lektor
 exifread==3.0.0
     # via lektor
+feedgenerator==2.1.0
+    # via lektor-atom
 filetype==1.2.0
     # via lektor
 flask==2.3.3
@@ -34,17 +36,32 @@ jinja2==3.1.2
     #   lektor
 lektor==3.3.10
     # via -r requirements.in
+lektor-atom==0.4.0
+    # via -r requirements.in
+lektor-markdown-admonition==0.3.1
+    # via -r requirements.in
+lektor-markdown-highlighter==0.3.2
+    # via -r requirements.in
+lektor-open-graph==1b4
+    # via -r requirements.in
+lektor-read-full-post==0.3
+    # via -r requirements.in
 markupsafe==2.1.3
     # via
     #   jinja2
     #   lektor
+    #   lektor-atom
     #   werkzeug
 mistune==0.8.4
     # via lektor
+pygments==2.16.1
+    # via lektor-markdown-highlighter
 python-slugify==8.0.1
     # via lektor
 pytz==2023.3
-    # via lektor
+    # via
+    #   feedgenerator
+    #   lektor
 requests==2.31.0
     # via lektor
 text-unidecode==1.3
