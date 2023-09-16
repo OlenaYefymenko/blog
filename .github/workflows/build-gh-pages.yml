@@ -47,7 +47,7 @@ jobs:
 
     environment:
       name: gh-pages
-      url: https://olenayefymenko.github.io/blog
+      url: https://blog.yefymenko.pp.ua
 
     permissions:
       pages: write
@@ -68,7 +68,7 @@ jobs:
       run: sleep 120
     - name: Ping Google about the updated sitemap
       run: >-
-        curl https://google.com/ping?sitemap=https://olenayefymenko.github.io/blog/sitemap.xml
+        curl https://google.com/ping?sitemap=https://blog.yefymenko.pp.ua/sitemap.xml
     - name: Ping Google about the updated RSS feed
       run: >-
-        curl https://google.com/ping?sitemap=https://olenayefymenko.github.io/blog/feed.xml
+        curl https://google.com/ping?sitemap=https://blog.yefymenko.pp.ua/feed.xml
