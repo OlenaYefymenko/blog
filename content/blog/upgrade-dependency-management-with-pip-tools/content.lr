@@ -1,0 +1,15 @@
+title: Upgrade Your Dependency Management with pip-tools
+---
+pub_date: 2024-03-13
+---
+author: Olena Yefymenko
+---
+twitter_handle: olena_yefymenko
+---
+body:
+
+Dependency management is one of the most important issues for every Software Engineer.
+The tool we choose for dependency management is fundamental and has a significant impact
+on many aspects of our applications. I want to talk about dependency management in Python,
+which plays a key role in the reproducibility of environments, sharing code, and deployment
+of our applications.
