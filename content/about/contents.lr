@@ -2,23 +2,21 @@ _model: page
 ---
 body:
 
-### Hi there 👋
+### Hi there :)
 
-My name is Olena Yefymenko. I’m an aspiring Python developer. My first IT experience was obtained in the cloud area during my internship. I learned and implemented many new technologies and tools, including serverless AWS services and IoT core devices. It was not easy, but interesting.
+I’m Olena, a Software Engineer with 3 years of experience building backend systems, covering the full cycle: from architecture and development to testing and deployment.
 
-However, learning was always an integral part of my life. I've spent a significant part of my career in data analysis and research. Also, I had familiarity with scientific activity during my studding at university. So, my job expertise contributed the habit to study constantly and search insights.
+Learning was always an integral part of my life. I’ve spent a significant part of my career in data analysis and research. Also, I had familiarity with scientific activity during my studying at university. So, my job expertise contributed the habit to study constantly and search insights. Beyond daily projects, I grow by contributing to open source, attending conferences and meetups, and being part of the Python community.
 
-Like most of us, I store notes in my computer or in the Cloud. However, considering that *learning to public* provides a deeper understanding of the issues we study, I have come up with the idea that sharing my learning process is a good approach to improving knowledge. It's also important that I have a chance to help someone.
+What I love most about this work is that there’s always something new to learn. I believe that *learning in public* leads to deeper understanding. Writing forces you to clarify your thinking, and sharing it might help someone else along the way. That’s why this blog exists.
 
-Reflecting on various learning areas, I've outlined some objectives for my blog:
+Here I write about:
 
-- 👁️ Analyze basic software design patterns.
-- 🐍 Share insights and best practices in Python development.
-- 🌐 Dive deep into Django framework, publish some step of my own project.
-- 🛠 Highlight related tools, libraries, and frameworks that supercharge Python and Django development.     
-- 🌥️ Consider topics of cloud technologies (perhaps, I will prepare for the next AWS certification exam).
+- Git workflows and best practices for effective collaboration.
+- Python core: internals, patterns, and idiomatic code.
+- Testing strategies: what to test, how to structure tests, and what actually works.
+- Automating and deploying: CI/CD, Docker, GitHub Actions, and infrastructure as code.
 
+*You can find my open source work and projects on [GitHub](https://github.com/OlenaYefymenko).*
 
-*To find out what I'm currently working on, you can take a look at [my GitHub profile](https://github.com/OlenaYefymenko).*
-
-Obviously, I am not expert in these fields, but I strive to self-improvement and have motivation to work a lot. We'll see what happens😉.
+Outside of work, I enjoy staying active: hiking, cycling, and skiing in winter. Besides that, dance has always been part of my life — I studied choreography for years and still can't resist a good song!
