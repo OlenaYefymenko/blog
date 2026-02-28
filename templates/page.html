@@ -1,6 +1,13 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+  {% if this._path == '/about' %}
+  <div class="about-layout">
+    <img class="about-photo" src="{{ '/static/photo.jpg' | url }}" alt="Olena Yefymenko">
+    <div class="about-body">{{ this.body }}</div>
+  </div>
+  {% else %}
   <h2>{{ this.title }}</h2>
   {{ this.body }}
+  {% endif %}
 {% endblock %}

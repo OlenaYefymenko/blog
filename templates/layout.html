@@ -14,16 +14,9 @@
 
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
-  <link rel="prefetch">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ config.PROJECT.name }}" href="/feed.xml">
   <link rel="stylesheet" href="{{ get_pygments_stylesheet() | url }}">
   <link rel="stylesheet" href="{{ '/static/style.css' | url }}">
-
-  <!-- Adding Nunito Sans font -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
-    rel="stylesheet">
 
   <title>{% block title %}Welcome{% endblock %} — {{ config.PROJECT.name }}</title>
 
@@ -35,23 +28,36 @@
 
 <body>
   <header>
-    <h1><a href="{{ '/' | url }}">{{ config.PROJECT.name }}</a></h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path[:5] in ('/', '/blog' ) %} class="active" {% endif %}><a href="{{ '/' | url }}">TIL</a></li>
-          {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', "About Me"]
-          ] %}
-          <li{% if this.is_child_of(href) %} class="active" {% endif %}><a href="{{ href | url }}">{{ title }}</a></li>
+    <div class="inner">
+      <div class="header-top">
+        <h1><a href="{{ '/' | url }}">{{ config.PROJECT.name }}</a></h1>
+        <nav>
+          <ul class="nav navbar-nav">
+            <li{% if this._path[:5] in ('/', '/blog' ) %} class="active" {% endif %}>
+              <a href="{{ '/' | url }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                TIL
+              </a>
+            </li>
+            {% for href, title, icon in [
+              ['/projects', 'Valuable Insights', '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6M12 3a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 6H9c-1.5-1.5-3-3.5-3-6a6 6 0 0 1 6-6z"/></svg>'],
+              ['/about', 'About Me', '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>']
+            ] %}
+            <li{% if this.is_child_of(href) %} class="active" {% endif %}>
+              <a href="{{ href | url }}">{{ icon | safe }} {{ title }}</a>
+            </li>
             {% endfor %}
-      </ul>
-    </nav>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <div class="page">
     {% block body %}{% endblock %}
   </div>
   <footer>
-    © 2023 by Olena Yefymenko
+    <div class="inner">
+      © Olena Yefymenko
+    </div>
   </footer>
 </body>
