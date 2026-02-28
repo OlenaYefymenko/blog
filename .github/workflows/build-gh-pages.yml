@@ -15,11 +15,11 @@ jobs:
 
     steps:
     - name: Switch to Python 3.11
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
         python-version: 3.11
     - name: Check out src from Git
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
     - name: Install Lektor from PyPI
       run: >-
         python -m
@@ -34,7 +34,7 @@ jobs:
         --verbose
         --output-path www
     - name: Save the generated HTML output as a GitHub Actions artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: www
 
@@ -55,7 +55,7 @@ jobs:
 
     steps:
     - name: Publish the Lektor website to GH Pages
-      uses: actions/deploy-pages@v2
+      uses: actions/deploy-pages@v4
 
   notify-google:
     name: 📝
